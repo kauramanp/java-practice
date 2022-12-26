@@ -9,7 +9,6 @@ package ClassObject;
  * Create three objects obj1, obj2, obj3.
  * Execute method1 with all the objects.
  * Similarly perform for method2.
- * (Optional) Replace static with final for var2 and run the program. Note your observations.
  */
 public class StaticFunction {
     int var1 = 10;
