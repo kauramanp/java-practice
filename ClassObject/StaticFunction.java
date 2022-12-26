@@ -12,5 +12,33 @@ package ClassObject;
  * (Optional) Replace static with final for var2 and run the program. Note your observations.
  */
 public class StaticFunction {
+    int var1 = 10;
+    static int var2 = 10;
 
+    public void method1() {
+        var1++;
+        System.out.println("var1 = " + var1);
+    }
+
+    public void method2() {
+        var2++;
+        System.out.println("static var2 = " + var2);
+    }
+
+    public static void main(String args[]) {
+        StaticFunction obj1, obj2, obj3;
+        obj1 = new StaticFunction();
+        obj2 = new StaticFunction();
+        obj3 = new StaticFunction();
+        System.out.println("Invoking methods for obj1");
+        obj1.method1();
+        obj1.method2();
+        System.out.println("Invoking methods for obj2");
+        obj2.method1();
+        obj2.method2();
+        System.out.println("Invoking methods for obj3");
+        obj3.method1();
+        obj3.method2();
+
+    }
 }
