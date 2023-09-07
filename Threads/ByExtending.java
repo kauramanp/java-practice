@@ -18,7 +18,6 @@ class ByExtending extends Thread {
         ByExtending byExtending1 = new ByExtending(1);
         try {
             byExtending1.start();
-
             byExtending.join();
         } catch (InterruptedException e) {
             e.printStackTrace();
